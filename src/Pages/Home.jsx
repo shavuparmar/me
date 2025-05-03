@@ -20,7 +20,8 @@ import LinkeDinpic from "../Images/Icon/linkedin.png"
 import Twiterpic from "../Images/Icon/twitter.png"
 import Resumeicon from "../Images/Icon/Resume.png"
 import Emailpic from "../Images/Icon/gmail.png"
- 
+import ContactForm from "./ContactForm";
+
 
 
 
@@ -32,14 +33,14 @@ import Emailpic from "../Images/Icon/gmail.png"
 
 
 export default function Home() {
- 
+
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = pdfFile;
     link.download = "Resume";
     link.click();
   };
-  
+
   return (
     <div className="MainContainer">
       <NavBar />
@@ -75,37 +76,37 @@ export default function Home() {
                     </Link>
                   </li> */}
                   <li>
-                    
+
                     <Link to="https://www.github.com/shavuparmar">
-                      
+
                       <img src={GitHub} alt="" />
                     </Link>
                   </li>
                   <li>
-                    
+
                     <Link to="https://www.snapchat.com/add/imshavuparmar">
-                      
+
                       <img src={SnapChatpic} alt="" />
                     </Link>
                   </li>
                   <li>
-                    
+
                     <Link to="mailto:parmarshavu009@gmail.com">
-                      
+
                       <img src={Emailpic} alt="" />
                     </Link>
                   </li>
                   <li>
-                    
+
                     <Link to="https://x.com/shavuparmar">
-                      
+
                       <img src={Twiterpic} alt="" />
                     </Link>
                   </li>
                   <li>
-                    
+
                     <Link to="http://linkedin.com/in/shavuparmar/">
-                      
+
                       <img src={LinkeDinpic} alt="" />
                     </Link>
                   </li>
@@ -116,9 +117,9 @@ export default function Home() {
               <button
                 className="btns"
                 onClick={handleDownload}
-                
+
               >
-                  <img src={Resumeicon} alt="PDF" className="Resunepic" />
+                <img src={Resumeicon} alt="PDF" className="Resunepic" />
                 Resume
               </button>
             </div>
@@ -136,7 +137,7 @@ export default function Home() {
             <div className="AboutDetials">
               <h1>About Me</h1>
               <p>
-                Hi! I'm ShavuParmar a passionate Web Developer and Graphic
+                Hi! I'm <b> ShavuParmar </b> a passionate Web Developer and Graphic
                 Designer with a creative eye and a knack for clean, functional
                 design. I blend technical expertise with visual storytelling to
                 create websites and graphics that not only look great but also
@@ -181,23 +182,10 @@ export default function Home() {
           </div>
         </div>
 
-<div className="ContactSection">
-  <div className="Contact">
-    <div className="ContactBorder">
-                  <h2>Contact</h2>
-     <form action="Post">
-      <input type="text" placeholder="Your Name" />
-      <input type="email" name="" id="" placeholder="Your EmailAddress"/>
-      <input type="number" placeholder="Your Mobile Number" />
-       <input type="text" name="" id="" placeholder="Your Message" />
-      <input type="button" className="btns" value="submit" />
-      </form>
-    </div>
-  </div>
-</div>
+       
 
 
-
+                  <ContactForm/>
 
 
 
