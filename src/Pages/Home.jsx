@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../Common/NavBar";
-import "../Index.css";
+import "../index.css";
 import Developer from "../Images/Developer.jpg";
 import Ghumi from "./Ghumi";
 import Aboutimg from "../Images/AboutUs.jpg";
