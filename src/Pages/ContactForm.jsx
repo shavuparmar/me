@@ -22,7 +22,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch('https://backend-nbjc.onrender.com', {
+      const res = await fetch("https://backend-tasx.onrender.com", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
