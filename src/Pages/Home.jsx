@@ -37,7 +37,7 @@ export default function Home() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = pdfFile;
-    link.download = "Resume";
+    link.download = "SaurabResume";
     link.click();
   };
 
