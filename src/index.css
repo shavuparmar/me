@@ -197,6 +197,79 @@ input:placeholder-shown {
     color: black;
 }
 
+/* Projects Pages css */
+
+
+.ProjectsContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 10%);
+}
+
+.Boxes {
+    border: 2px solid black;
+    width: 250px;
+    height: 300px;
+    margin-left: 25px;
+    margin-top: 25px;
+    gap: 5px;
+}
+
+.Boxes:hover {
+    box-shadow: 0 0 10px 5px #8b8b8bcc;
+
+
+}
+
+.BoxDetails {
+    text-align: center;
+   
+}
+
+.BoxDetails h2 {
+    margin-top: 10px;
+}
+
+
+
+.BoxDetails img {
+    height: 152px;
+    margin-top: 30px;
+}
+
+
+
+.BtnDesing {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgb(24, 42, 90);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+   
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:320px),
@@ -214,9 +287,10 @@ input:placeholder-shown {
         margin: 0;
     }
 
-    .ImagesSection{
+    .ImagesSection {
         text-align: center;
     }
+
     .ImagesSection img {
         height: 350px;
     }
@@ -251,7 +325,7 @@ input:placeholder-shown {
         gap: 20px;
     }
 
-    .SkillSection{
+    .SkillSection {
         margin-top: 15px;
 
     }
@@ -302,7 +376,13 @@ input:placeholder-shown {
         margin-bottom: 30px;
     }
 
-
-
-
+    .ProjectsContainer {
+      display: grid;
+    grid-template-columns: repeat(1, 10%);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    }
 }
